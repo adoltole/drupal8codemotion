@@ -1,0 +1,33 @@
+uuid: 5dc28c02-fb39-4fbb-b99e-9ce1aa9d8272
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.news_codemotion_2016.body
+    - field.field.node.news_codemotion_2016.field_principal_image
+    - node.type.news_codemotion_2016
+  module:
+    - image
+    - text
+    - user
+id: node.news_codemotion_2016.default
+targetEntityType: node
+bundle: news_codemotion_2016
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+  field_principal_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+hidden:
+  links: true

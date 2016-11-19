@@ -1,0 +1,22 @@
+uuid: c5084616-f640-4297-bce4-d4b6f2bccc5f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.news_codemotion_2016
+  module:
+    - text
+id: node.news_codemotion_2016.body
+field_name: body
+entity_type: node
+bundle: news_codemotion_2016
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

@@ -1,0 +1,26 @@
+uuid: de416a29-1450-4830-865c-4bcf43711ee0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.news_codemotion_2016.body
+    - node.type.news_codemotion_2016
+  module:
+    - text
+    - user
+id: node.news_codemotion_2016.teaser
+targetEntityType: node
+bundle: news_codemotion_2016
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden: {  }
